@@ -1,13 +1,11 @@
-import React,{useContext, useState} from 'react'
+import React, { useContext, useState } from 'react';
 import Contex from '../../context/CreateContext';
 
 const AddNote = () => {
  const contex = useContext(Contex)
  const {createNote, showAlert, getNote} = contex
   const [AddNoteData, setNote] = useState({title:"", desc:"", catg:"", url:"", catgOther:""});
-// const {AddNoteData, setAddNoteData} = useState({title:"", desc:"", catg:"", url:""})
-const [successMsg, setSuccessMsg] = useState("");
-const [failMsg, setFailsMsg] = useState("");
+ 
 
 const onChange = (e)=>{
   const {name, value} = e.target
@@ -45,7 +43,7 @@ const  {title, desc, catg, url , catgOther} = AddNoteData
 <div className='container mx-auto mt-4  bg-gray-50 dark:bg-yellow-300 '>
  
   <div className="flex flex-col items-center justify-center  lg:py-0">
-      <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+      <a href="/#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
         <img className="w-8 h-8 mr-2" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/note-plus-3199351-2665696.png" alt="logo" />
    Add Note
       </a>

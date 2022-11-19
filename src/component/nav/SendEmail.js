@@ -32,7 +32,7 @@ const res = await fetch('https://notetakingappkishore.herokuapp.com/api/auth/sen
     <div className='container mx-auto  bg-gray-50 dark:bg-yellow-300  mt-4 shadow-sm'>
  
     <div className="flex flex-col items-center justify-center  lg:py-0">
-        <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+        <a href="/#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
           <img className="w-8 h-8 mr-2" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/note-plus-3199351-2665696.png" alt="logo" />
     SendEmail
         </a>

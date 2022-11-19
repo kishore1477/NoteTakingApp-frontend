@@ -9,16 +9,13 @@ const NoteState = (props) => {
 
 const [alert, setAlert] = useState(null);
 const [user, setUser] = useState("");
-const [favicon, setFavicon] = useState('');
 const [forcereducer, setforceUpdate] = useReducer(x => x + 1, 0);
 
 useEffect(() => {
   getNote()
 }, [forcereducer]);
   const [show, setShow] = useState(false);
-  const [showNote, setShowNote] = useState(false);
   const [note, setnote] = useState({id : "",etitle : "", edesc:"",ecat:"",eurl:""})
-const [mode, setMode] = useState("light");
 
   const [notes, setNotes] = useState([])
  
@@ -130,7 +127,7 @@ const login = async(data) =>{
   
       })
     });
-    let json =  await rawResponse.json()
+    // let json =  await rawResponse.json()
     
     if(!rawResponse.ok){
       showAlert("danger", "Note Not edited")
@@ -226,7 +223,7 @@ Launch static backdrop modal
 
  
       
-    <Contex.Provider value ={{ handleDelete,editNote,getNote,notes,showAlert, alert,handleNoteEdit,editNote,getUser, createNote, user, Signup, login}}>
+    <Contex.Provider value ={{ handleDelete, getNote,notes,showAlert, alert,handleNoteEdit,editNote,getUser, createNote, user, Signup, login}}>
         {props.children}
     </Contex.Provider>
     </>

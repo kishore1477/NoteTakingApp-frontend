@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './component/nav/Navbar';
 // import { Route, Router, Routes } from 'react-router-dom';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
+ 
 } from "react-router-dom";
 import Notes from './component/body/Notes';
 import Home from './component/body/Home';

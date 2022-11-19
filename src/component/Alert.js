@@ -10,7 +10,7 @@ const Alert = () => {
           const  lower = word.toLowerCase();
           return lower.charAt(0).toUpperCase() + lower.slice(1);
     }
-    const token = localStorage.getItem("at");
+   
   return (
     <>
 <> <div className='container'>

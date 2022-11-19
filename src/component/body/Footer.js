@@ -9,7 +9,7 @@ const Footer = () => {
       style={{ userSelect: "auto" }}
     >
      {/* <a className=" no-underline flex title-font font-medium items-center text-gray-900  md:mb-0" style={{ userSelect: 'auto' }}> */}
-          <img src="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Note-Taking-App-icon.png" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24" style={{ userSelect: 'auto' }}>
+          <img src="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Note-Taking-App-icon.png" alt='home_img' fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24" style={{ userSelect: 'auto' }}>
 
           </img>
           <Link to='/' className = "no-underline text-black">
@@ -29,7 +29,7 @@ const Footer = () => {
         className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
         style={{ userSelect: "auto" }}
       >
-        <a className="text-gray-500" style={{ userSelect: "auto" }}>
+        <a href='/#' className="text-gray-500" style={{ userSelect: "auto" }}>
           <svg
             fill="currentColor"
             strokeLinecap="round"
@@ -45,7 +45,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a className="ml-3 text-gray-500" style={{ userSelect: "auto" }}>
+        <a href='/#' className="ml-3 text-gray-500" style={{ userSelect: "auto" }}>
           <svg
             fill="currentColor"
             strokeLinecap="round"
@@ -61,7 +61,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a className="ml-3 text-gray-500" style={{ userSelect: "auto" }}>
+        <a  href='/#' className="ml-3 text-gray-500" style={{ userSelect: "auto" }}>
           <svg
             fill="none"
             stroke="currentColor"
@@ -87,7 +87,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a className="ml-3 text-gray-500" style={{ userSelect: "auto" }}>
+        <a  href='/#' className="ml-3 text-gray-500" style={{ userSelect: "auto" }}>
           <svg
             fill="currentColor"
             stroke="currentColor"

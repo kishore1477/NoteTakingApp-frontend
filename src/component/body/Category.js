@@ -77,7 +77,7 @@ notes.map((item)=>{
        <div className="flex items-center flex-wrap " style={{userSelect: 'auto'}}>
   <Link to ={`/noteItem/${item._id}`} className='no-underline text-black'>
   
-       <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" style={{userSelect: 'auto'}}>Read More
+       <a href='/#' className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" style={{userSelect: 'auto'}}>Read More
            <svg className="w-4 h-4 " viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round" style={{userSelect: 'auto'}}>
              <path d="M5 12h14" style={{userSelect: 'auto'}} />
              <path d="M12 5l7 7-7 7" style={{userSelect: 'auto'}} />

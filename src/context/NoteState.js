@@ -88,7 +88,7 @@ const createNote = async(data) =>{
 
                 // Auth
 const Signup  = async(data)=>{
-  const res = await fetch('https://kind-cyan-kitten-kit.cyclic.app/register', {
+  const res = await fetch('https://kind-cyan-kitten-kit.cyclic.app/api/auth/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

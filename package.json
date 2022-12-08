@@ -2,6 +2,10 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "v16.18.1",
+    "npm": "8.19.2"
+  },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^2.0.1",

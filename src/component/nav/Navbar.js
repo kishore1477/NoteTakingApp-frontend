@@ -11,14 +11,22 @@ const Navbar = () => {
 // const router = useRoutes()
   const {getUser,user, notes} = useContext(Contex);
   
-  useEffect(() => {
-    getUser()
-  }, []);
+  // useEffect(() => {
+  //   getUser()
+  // }, []);
   
  
   
   const token = localStorage.getItem('token')
-  const {decodedToken} = useJwt(token)
+  if(token){
+    (
+async () => {
+  await getUser()
+}
+
+    )()
+  }
+  // const {decodedToken} = useJwt(token)
 
   
   const handleLogout = ()=>{
@@ -49,7 +57,7 @@ navigate('/login')
         
 
         </nav>
-        {token?<> <Dropdown className='hover:bg-purple-400 rounded'>
+        {token?  <> <Dropdown className='hover:bg-purple-400 rounded'>
       <Dropdown.Toggle variant="yellow" id="dropdown-basic">
        {user.name}
       </Dropdown.Toggle>

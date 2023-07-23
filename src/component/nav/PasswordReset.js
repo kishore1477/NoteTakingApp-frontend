@@ -32,7 +32,7 @@ setChangePassData({...changePassData, [name]: value})
     password: pwd,
     password_confirm :cpwd
   }
-  const PassRes = await fetch(`https://kind-cyan-kitten-kit.cyclic.app/api/auth/passwordReset/${id}/${token}`, {
+  const PassRes = await fetch(`https://notetakingbackend.cyclic.app/api/auth/passwordReset/${id}/${token}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -39,7 +39,7 @@ const showAlert = (type,message)=>{
       'Authorization':localStorage.getItem('token')
     }
   
-    let resUser = await fetch('https://kind-cyan-kitten-kit.cyclic.app/api/auth/loggedUserData', { headers,  method:"POST"})
+    let resUser = await fetch('https://notetakingbackend.cyclic.app/api/auth/loggedUserData', { headers,  method:"POST"})
     
     if(!resUser.ok){
       
@@ -61,7 +61,7 @@ const showAlert = (type,message)=>{
         'Authorization':localStorage.getItem('token')
       }
  
-      let res = await fetch('https://kind-cyan-kitten-kit.cyclic.app/api/notes/getNote', { headers})
+      let res = await fetch('https://notetakingbackend.cyclic.app/api/notes/getNote', { headers})
       
       if(!res.ok){
         
@@ -78,7 +78,7 @@ const showAlert = (type,message)=>{
   // ✍ Create
                         //  createNote
 const createNote = async(data) =>{
-  const res = await fetch('https://kind-cyan-kitten-kit.cyclic.app/api/notes/createNote',{  method: 'POST',headers: {
+  const res = await fetch('https://notetakingbackend.cyclic.app/api/notes/createNote',{  method: 'POST',headers: {
     'Authorization':localStorage.getItem('token'),
     'Content-Type': 'application/json'
   },
@@ -88,7 +88,7 @@ const createNote = async(data) =>{
 
                 // Auth
 const Signup  = async(data)=>{
-  const res = await fetch('https://kind-cyan-kitten-kit.cyclic.app/api/auth/register', {
+  const res = await fetch('https://notetakingbackend.cyclic.app/api/auth/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ const Signup  = async(data)=>{
   return res
 }
 const login = async(data) =>{
-  const res = await fetch('https://kind-cyan-kitten-kit.cyclic.app/api/auth/login',{  method: 'POST',headers: {
+  const res = await fetch('https://notetakingbackend.cyclic.app/api/auth/login',{  method: 'POST',headers: {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify(data)})
@@ -111,7 +111,7 @@ const login = async(data) =>{
   // ✔😍 Update 
         const editNote = async(id,title,desc, catgry,ulr)=>{
           
-     const rawResponse = await fetch(`https://kind-cyan-kitten-kit.cyclic.app/api/notes/updateNote/${id}`, {
+     const rawResponse = await fetch(`https://notetakingbackend.cyclic.app/api/notes/updateNote/${id}`, {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
@@ -163,7 +163,7 @@ const handleDelete = async(id)=>{
   const headers = {
     'Authorization': localStorage.getItem('token')
   }
-  let res = await fetch(`https://kind-cyan-kitten-kit.cyclic.app/api/notes/deleteNote/${id}`, { headers, method :"DELETE" })
+  let res = await fetch(`https://notetakingbackend.cyclic.app/api/notes/deleteNote/${id}`, { headers, method :"DELETE" })
   if(!res.ok){
     showAlert("danger", "Note not deleted")
   }else{

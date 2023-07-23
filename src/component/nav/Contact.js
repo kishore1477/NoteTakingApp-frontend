@@ -18,7 +18,7 @@ const data = {
 }
     
     
-  const contactRes = await  fetch('https://kind-cyan-kitten-kit.cyclic.app/api/auth/contact',  {
+  const contactRes = await  fetch('https://notetakingbackend.cyclic.app/api/auth/contact',  {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

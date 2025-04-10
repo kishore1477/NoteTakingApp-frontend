@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { backendUrl } from '../../utils/api-utils';
 const Contact = () => {
   const [contactData, setContactData] = useState({name:"", email:"", message:""});
   const [successMsg, setSuccessMsg] = useState("");
@@ -18,7 +19,7 @@ const data = {
 }
     
     
-  const contactRes = await  fetch('https://notetakingbackend.cyclic.app/api/auth/contact',  {
+  const contactRes = await  fetch(`${backendUrl}/api/auth/contact`,  {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

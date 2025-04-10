@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { AiFillEyeInvisible,AiFillEye } from 'react-icons/ai';
+import { backendUrl } from '../../utils/api-utils';
 
 const ChangePassword = () => {
   const [changePassData, setChangePassData] = useState({pwd:"", cpwd:""});
@@ -28,7 +29,7 @@ setChangePassData({...changePassData, [name]: value})
     password: pwd,
     password_confirm :cpwd
   }
-  const PassRes = await fetch('https://notetakingbackend.cyclic.app/api/auth/changePassword', {
+  const PassRes = await fetch(`${backendUrl}/api/auth/changePassword`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

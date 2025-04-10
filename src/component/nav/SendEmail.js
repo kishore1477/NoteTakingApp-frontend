@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { backendUrl } from '../../utils/api-utils';
 
 const SendEmail = () => {
   const [successMsg, setSuccessMsg] = useState("");
@@ -12,7 +13,7 @@ const handleEmailSubmit =async(e)=>{
 const data = {
   email:emailData
 }
-const res = await fetch('https://notetakingbackend.cyclic.app/api/auth/sendEmail', {method: 'POST',headers: {
+const res = await fetch(`${backendUrl}/api/auth/sendEmail`, {method: 'POST',headers: {
  
   'Content-Type': 'application/json'
 }, body:JSON.stringify(data)})

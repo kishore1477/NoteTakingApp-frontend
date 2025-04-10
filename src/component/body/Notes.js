@@ -40,13 +40,6 @@ const Notes = () => {
 
           {unique && unique.map((item, i) => {
             return <div className="p-4  md:w-1/2 xl:w-1/3" style={{ userSelect: 'auto' }}>
-
-
-
-
-
-
-
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style=
 
                 {{ userSelect: 'auto' }}>
@@ -82,7 +75,7 @@ const Notes = () => {
             </div>
           })}
 
-
+{unique && unique?.length === 0 &&   <div className=''><span> Please add notes </span></div> }
 
 
         </div>
